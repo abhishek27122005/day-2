@@ -1,0 +1,18 @@
+# Input
+total_bottles = int(input("Enter total water bottles: "))
+bottles_per_day = int(input("Enter bottles you drink per day: "))
+
+day = 1
+
+# Loop to simulate each day
+while total_bottles > 0:
+    if total_bottles >= bottles_per_day:
+        drank = bottles_per_day
+    else:
+        drank = total_bottles
+
+    total_bottles -= drank
+    print(f"# Day {day}: Drank {drank} bottle{'s' if drank > 1 else ''}. {total_bottles} left.")
+    day += 1
+
+print("# No more bottles left! ")
