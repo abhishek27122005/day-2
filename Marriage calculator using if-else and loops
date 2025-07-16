@@ -1,0 +1,30 @@
+er persoprint("Marriage Eligibility Checker")
+
+while True:
+    print("\n--- New Entry ---")
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    
+    print("abhishek:")
+    print("1. Male")
+    print("2. Female")
+    gender = input("Enter 1 or 2: ")
+
+    if gender == "1":
+        if age >= 21:
+            print(f"{name}, you are ready for marriage ")
+        else:
+            print(f"{name}, you are not ready for marriage ")
+    elif gender == "2":
+        if age >= 18:
+            print(f"{name}, you are ready for marriage ")
+        else:
+            print(f"{name}, you are not ready for marriage ")
+    else:
+        print("Invalid input for gender.")
+
+    # Repeat or stop
+    repeat = input("\nDo you want to check anothn? (yes/no): ")
+    if repeat.lower() != "yes":
+        print("\nThank you for using the Marriage Eligibility Checker!")
+        break
