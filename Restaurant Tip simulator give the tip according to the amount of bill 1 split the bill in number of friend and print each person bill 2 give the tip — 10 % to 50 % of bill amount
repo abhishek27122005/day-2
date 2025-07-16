@@ -1,0 +1,14 @@
+# Input
+bill = float(input("Enter total bill amount: ₹"))
+friends = int(input("Enter number of friends: "))
+tip_percent = float(input("Enter tip percentage (10 to 50): "))
+
+# Calculate tip and total
+tip = (bill * tip_percent) / 100
+total = bill + tip
+per_person = total / friends
+
+# Output
+print(f"\nTip amount: ₹{tip:.2f}")
+print(f"Total bill with tip: ₹{total:.2f}")
+print(f"Each person pays: ₹{per_person:.2f}")
